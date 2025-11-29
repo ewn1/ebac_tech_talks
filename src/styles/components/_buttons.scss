@@ -1,0 +1,23 @@
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap; //força o button a não quebrar a linha de texto, criando uma nova linha para todo o elemento.
+
+    &--primary {
+        color: #fff;
+        background-color: #4f2ac3;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}
